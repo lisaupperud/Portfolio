@@ -1,7 +1,19 @@
 <nav class="header-nav">
-  <img src="../../assets/lisaupperud-small.jpg" alt="">
-  <a routerLink="/">Home</a>
-  <a routerLink="/projects">Projects</a>
-  <a routerLink="/about">About Me</a>
+  <!-- ADD: LOGO OF SOME KIND 
+    <img
+    src="../../assets/lisaupperud-small.jpg"
+    alt="Lisa Upperud"
+    class="logo"
+  />-->
 
+  <!-- burger meny -->
+  <button class="hamburger" (click)="toggleMenu()" aria-label="Meny">
+    &#9776;
+  </button>
+
+  <div class="header-links" [class.open]="menuOpen">
+    <a routerLink="/" (click)="closeMenu()">Home</a>
+    <a routerLink="/projects" (click)="closeMenu()">Projects</a>
+    <a routerLink="/about" (click)="closeMenu()">About Me</a>
+  </div>
 </nav>

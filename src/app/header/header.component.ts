@@ -5,8 +5,16 @@ import { RouterLink, RouterModule } from '@angular/router';
   selector: 'app-header',
   imports: [RouterLink],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrl: './header.component.css',
 })
 export class HeaderComponent {
+  menuOpen = false;
 
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  closeMenu() {
+    this.menuOpen = false;
+  }
 }

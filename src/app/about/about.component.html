@@ -1,6 +1,44 @@
-<div class="flexContainer">
-  <p>about works!</p>
-  
-
-  <a class="button" routerLink="/">Home</a>
-</div>
+<section class="about-section">
+  <article class="work-history">
+    <img src="../../assets/workIcon.png" alt="" />
+    <div>
+      <h3>Work History</h3>
+      <p [ngClass]="isWorkExpanded ? 'expanded' : 'collapsed'">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec eros vel lectus gravida blandit.
+        Morbi ut justo non ligula volutpat fringilla. Vivamus lacinia, nunc a feugiat pretium, metus est iaculis lorem,
+        eget tristique purus nulla ac sapien. Curabitur suscipit felis id purus tempus, at hendrerit urna fermentum.
+      </p>
+      <button (click)="isWorkExpanded = !isWorkExpanded">
+        {{ isWorkExpanded ? 'Show less' : 'Read more' }}
+      </button>
+    </div>
+  </article>
+  <article class="programming">
+    <img src="../../assets/codeIcon.png" alt="" />
+    <div>
+      <h3>Programming History</h3>
+      <p [ngClass]="isProgrammingExpanded? 'expanded' : 'collapsed'">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec eros vel lectus gravida blandit.
+        Morbi ut justo non ligula volutpat fringilla. Vivamus lacinia, nunc a feugiat pretium, metus est iaculis lorem,
+        eget tristique purus nulla ac sapien. Curabitur suscipit felis id purus tempus, at hendrerit urna fermentum.
+      </p>
+      <button (click)="isProgrammingExpanded = !isProgrammingExpanded">
+        {{ isProgrammingExpanded ? 'Show less' : 'Read more' }}
+      </button>
+    </div>
+  </article>
+  <article class="interests">
+    <img src="../../assets/heartIcon.png" alt="" />
+    <div>
+      <h3>Interests</h3>
+      <p [ngClass]="isInterestsExpanded ? 'expanded' : 'collapsed'">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec eros vel lectus gravida blandit.
+        Morbi ut justo non ligula volutpat fringilla. Vivamus lacinia, nunc a feugiat pretium, metus est iaculis lorem,
+        eget tristique purus nulla ac sapien. Curabitur suscipit felis id purus tempus, at hendrerit urna fermentum.
+      </p>
+      <button (click)="isInterestsExpanded = !isInterestsExpanded">
+        {{ isInterestsExpanded ? 'Show less' : 'Read more' }}
+      </button>
+    </div>
+  </article>
+</section>

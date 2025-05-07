@@ -79,3 +79,182 @@
 .about div h3 {
   padding-top: 40px;
 }
+
+@media (max-width: 1080px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    font-family: "Hanken Grotesk";
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .welcome {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+  }
+
+  .welcome img {
+    width: 200px;
+    height: 200px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-right: 20px;
+    padding-left: 30px;
+  }
+
+  .welcome div {
+    padding: 10px 20px;
+  }
+
+  .welcome div h3 {
+    padding-top: 40px;
+  }
+
+  .portfolio {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+  }
+
+  .portfolio img {
+    width: 200px;
+    height: 200px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-right: 20px;
+    padding-left: 30px;
+  }
+
+  .portfolio div {
+    padding: 10px 20px;
+    /*background-color: chartreuse;*/
+  }
+
+  .portfolio div h3 {
+    padding-top: 40px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+  }
+
+  .about img {
+    width: 200px;
+    height: 200px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-right: 20px;
+    padding-left: 30px;
+  }
+
+  .about div {
+    padding: 10px 20px;
+    /*background-color: chartreuse;*/
+  }
+
+  .about div h3 {
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    font-family: "Hanken Grotesk";
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+  }
+
+  .welcome img {
+    width: 50%;
+    border-radius: 50%;
+    padding-right: 20px;
+    padding-left: 30px;
+  }
+
+  .welcome div {
+    text-align: center;
+    padding: 10px 20px;
+    /*background-color: aqua;*/
+  }
+
+  .welcome div h3 {
+    padding-top: 5px;
+  }
+
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+  }
+
+  .portfolio img {
+    width: 50%;
+    border-radius: 50%;
+    padding-right: 20px;
+    padding-left: 30px;
+  }
+
+  .portfolio div {
+    text-align: center;
+    padding: 10px 20px;
+    /*background-color: chartreuse;*/
+  }
+
+  .portfolio div h3 {
+    padding-top: 5px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+  }
+
+  .about img {
+    width: 50%;
+    border-radius: 50%;
+    padding-right: 20px;
+    padding-left: 30px;
+  }
+
+  .about div {
+    text-align: center;
+    padding: 10px 20px;
+    /*background-color: chartreuse;*/
+  }
+
+  .about div h3 {
+    padding-top: 5px;
+  }
+}

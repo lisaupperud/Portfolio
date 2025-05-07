@@ -1,10 +1,12 @@
 /* Grundlayout */
 .header-nav {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(to bottom, aqua 0%, aqua 70%, transparent 100%);
-  padding: 1rem 2rem;
+  height: 50px;
+  background: linear-gradient(to bottom, rgb(197, 187, 201) 0%, rgb(197, 187, 201) 30%, transparent 100%);
+  padding: 2rem 3rem;
 }
 
 .logo {
@@ -26,6 +28,7 @@
 .header-links {
   display: flex;
   gap: 1rem;
+  padding-bottom: 20px;
 }
 
 .header-links a {

@@ -3,41 +3,73 @@
     <img src="../../assets/workIcon.png" alt="" />
     <div>
       <h3>Work History</h3>
-      <p [ngClass]="isWorkExpanded ? 'expanded' : 'collapsed'">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec eros vel lectus gravida blandit.
-        Morbi ut justo non ligula volutpat fringilla. Vivamus lacinia, nunc a feugiat pretium, metus est iaculis lorem,
-        eget tristique purus nulla ac sapien. Curabitur suscipit felis id purus tempus, at hendrerit urna fermentum.
-      </p>
-      <button (click)="isWorkExpanded = !isWorkExpanded">
-        {{ isWorkExpanded ? 'Show less' : 'Read more' }}
-      </button>
+  
+      <!-- WRAPPER START -->
+      <div class="text-wrapper">
+        <p [ngClass]="isWorkExpanded ? 'expanded' : 'collapsed'">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec
+          eros vel lectus gravida blandit. Morbi ut justo non ligula volutpat
+          fringilla. Vivamus lacinia, nunc a feugiat pretium, metus est iaculis
+          lorem, eget tristique purus nulla ac sapien. Curabitur suscipit felis id
+          purus tempus, at hendrerit urna fermentum.
+        </p>
+  
+        <!-- Fade-overlay endast när texten är kollapsad -->
+        <div class="fade-overlay" *ngIf="!isWorkExpanded">
+          <button (click)="isWorkExpanded = !isWorkExpanded" class="button">
+            Read More
+          </button>
+        </div>
+  
+        <!-- Visa "Show Less"-knappen nedanför vid expanded -->
+        <button
+          *ngIf="isWorkExpanded"
+          (click)="isWorkExpanded = !isWorkExpanded"
+          class="button"
+        >
+          Show Less
+        </button>
+      </div>
+      <!-- WRAPPER END -->
+  
     </div>
   </article>
+  
   <article class="programming">
-    <img src="../../assets/codeIcon.png" alt="" />
+    <img src="../../assets/codeIconResized(1).png" alt="" />
     <div>
-      <h3>Programming History</h3>
-      <p [ngClass]="isProgrammingExpanded? 'expanded' : 'collapsed'">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec eros vel lectus gravida blandit.
-        Morbi ut justo non ligula volutpat fringilla. Vivamus lacinia, nunc a feugiat pretium, metus est iaculis lorem,
-        eget tristique purus nulla ac sapien. Curabitur suscipit felis id purus tempus, at hendrerit urna fermentum.
+      <h3>Programming</h3>
+      <p [ngClass]="isProgrammingExpanded ? 'expanded' : 'collapsed'">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec
+        eros vel lectus gravida blandit. Morbi ut justo non ligula volutpat
+        fringilla. Vivamus lacinia, nunc a feugiat pretium, metus est iaculis
+        lorem, eget tristique purus nulla ac sapien. Curabitur suscipit felis id
+        purus tempus, at hendrerit urna fermentum.
       </p>
-      <button (click)="isProgrammingExpanded = !isProgrammingExpanded">
-        {{ isProgrammingExpanded ? 'Show less' : 'Read more' }}
+      <button
+        (click)="isProgrammingExpanded = !isProgrammingExpanded"
+        class="button"
+      >
+        {{ isProgrammingExpanded ? "Show Less" : "Read More" }}
       </button>
     </div>
   </article>
   <article class="interests">
-    <img src="../../assets/heartIcon.png" alt="" />
+    <img src="../../assets/loveIcon.png" alt="" />
     <div>
       <h3>Interests</h3>
       <p [ngClass]="isInterestsExpanded ? 'expanded' : 'collapsed'">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec eros vel lectus gravida blandit.
-        Morbi ut justo non ligula volutpat fringilla. Vivamus lacinia, nunc a feugiat pretium, metus est iaculis lorem,
-        eget tristique purus nulla ac sapien. Curabitur suscipit felis id purus tempus, at hendrerit urna fermentum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec
+        eros vel lectus gravida blandit. Morbi ut justo non ligula volutpat
+        fringilla. Vivamus lacinia, nunc a feugiat pretium, metus est iaculis
+        lorem, eget tristique purus nulla ac sapien. Curabitur suscipit felis id
+        purus tempus, at hendrerit urna fermentum.
       </p>
-      <button (click)="isInterestsExpanded = !isInterestsExpanded">
-        {{ isInterestsExpanded ? 'Show less' : 'Read more' }}
+      <button
+        (click)="isInterestsExpanded = !isInterestsExpanded"
+        class="button"
+      >
+        {{ isInterestsExpanded ? "Show Less" : "Read More" }}
       </button>
     </div>
   </article>

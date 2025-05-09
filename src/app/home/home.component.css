@@ -190,6 +190,7 @@
 
   .welcome img {
     width: 50%;
+    height: 50%;
     border-radius: 50%;
     padding-right: 20px;
     padding-left: 30px;
@@ -216,6 +217,7 @@
 
   .portfolio img {
     width: 50%;
+    height: 50%;
     border-radius: 50%;
     padding-right: 20px;
     padding-left: 30px;
@@ -243,6 +245,7 @@
 
   .about img {
     width: 50%;
+    height: 50%;
     border-radius: 50%;
     padding-right: 20px;
     padding-left: 30px;

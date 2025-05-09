@@ -3,38 +3,19 @@
     <img src="../../assets/workIcon.png" alt="" />
     <div>
       <h3>Work History</h3>
-  
-      <!-- WRAPPER START -->
-      <div class="text-wrapper">
-        <p [ngClass]="isWorkExpanded ? 'expanded' : 'collapsed'">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec
-          eros vel lectus gravida blandit. Morbi ut justo non ligula volutpat
-          fringilla. Vivamus lacinia, nunc a feugiat pretium, metus est iaculis
-          lorem, eget tristique purus nulla ac sapien. Curabitur suscipit felis id
-          purus tempus, at hendrerit urna fermentum.
-        </p>
-  
-        <!-- Fade-overlay endast när texten är kollapsad -->
-        <div class="fade-overlay" *ngIf="!isWorkExpanded">
-          <button (click)="isWorkExpanded = !isWorkExpanded" class="button">
-            Read More
-          </button>
-        </div>
-  
-        <!-- Visa "Show Less"-knappen nedanför vid expanded -->
-        <button
-          *ngIf="isWorkExpanded"
-          (click)="isWorkExpanded = !isWorkExpanded"
-          class="button"
-        >
-          Show Less
-        </button>
-      </div>
-      <!-- WRAPPER END -->
-  
+      <p [ngClass]="isWorkExpanded ? 'expanded' : 'collapsed'">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec
+        eros vel lectus gravida blandit. Morbi ut justo non ligula volutpat
+        fringilla. Vivamus lacinia, nunc a feugiat pretium, metus est iaculis
+        lorem, eget tristique purus nulla ac sapien. Curabitur suscipit felis id
+        purus tempus, at hendrerit urna fermentum.
+      </p>
+      <button (click)="isWorkExpanded = !isWorkExpanded" class="button">
+        {{ isWorkExpanded ? "Show Less" : "Read More" }}
+      </button>
     </div>
   </article>
-  
+
   <article class="programming">
     <img src="../../assets/codeIconResized(1).png" alt="" />
     <div>

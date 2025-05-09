@@ -20,6 +20,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /*border: 2px solid black;*/
 }
 
 .work-history img {
@@ -39,9 +40,6 @@ h3 {
 
 .work-history p {
   margin-bottom: 0px;
-  transition: max-height 0.3s ease-in-out;
-  overflow: hidden;
-  position: relative;
 }
 
 .programming {
@@ -110,19 +108,24 @@ h3 {
   max-height: 500px; /* Justera efter behov */
 }
 
-/*.button {
+.button {
   all: unset;
-  width: 100%;
-  background-color: aqua;
+  /* just for testing */
+  width: 108%;
+  /*background-color: aqua;*/
   cursor: pointer;
   padding: 20px 10px;
-}*/
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 2px solid rgb(183, 164, 167);
+  background-color: rgb(159, 144, 146);
+}
 
 
 /* FADED BUTTONS*/
 
 
-.text-wrapper {
+/*.text-wrapper {
   position: relative;
   width: 70%;
   max-width: 100%;
@@ -148,4 +151,4 @@ h3 {
   border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
-}
+}*/

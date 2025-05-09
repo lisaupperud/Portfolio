@@ -126,7 +126,6 @@ h3 {
 /* MEDIA QUERIES */
 
 @media (max-width: 1080px) {
-
   .about-section article {
     border-radius: 20px;
   }

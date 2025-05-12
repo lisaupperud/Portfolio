@@ -1,0 +1,30 @@
+h1 {
+  text-align: center;
+  font-family: Hanken Grotesk;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 20px 10px;
+}
+
+.article-box {
+  flex: 1 1 33%;
+  max-width: 33%;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: Hanken Grotesk;
+  padding: 20px 20px;
+  border: 5px solid rgb(156, 109, 143);
+  border-radius: 5px;
+}
+
+.article-box a {
+  text-decoration: none;
+  color: rgb(29, 8, 62);
+  font-weight: bold;
+}

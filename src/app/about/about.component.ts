@@ -1,18 +1,12 @@
-import { NgClass, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-about',
-  imports: [NgClass, NgIf],
+  imports: [RouterLink],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
 })
 export class AboutComponent {
-  isWorkExpanded = false;
-  isProgrammingExpanded = false;
-  isInterestsExpanded = false;
 
-  shortText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit...';
-  longText =
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies... hela texten här';
 }

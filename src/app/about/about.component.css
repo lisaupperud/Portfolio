@@ -26,6 +26,31 @@ p {
   text-align: center;
 }
 
+.cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  padding: 5px 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding-top: 20px;
+}
+
+.cv p {
+  font-family: "Hanken Grotesk";
+  text-align: center;
+  margin-top: 0;
+}
+
+.cv a {
+  text-decoration: none;
+}
+
+.allTextDiv {
+  margin-bottom: 20px;
+}
+
 .about-section {
   display: flex;
   flex-direction: row;
@@ -41,6 +66,7 @@ p {
 
 h3 {
   font-size: 25px;
+  margin-bottom: 15px;
 }
 
 .work-history {

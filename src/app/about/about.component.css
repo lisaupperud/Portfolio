@@ -1,3 +1,31 @@
+.hero-image {
+  background-image: linear-gradient(
+      to bottom,
+      rgb(158, 142, 164) 0%,
+      rgba(158, 142, 164, 0) 30%
+    ),
+    url("../../assets/hero-image-projects.jpg");
+  height: 100%;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Hanken Grotesk";
+  text-align: center;
+  font-size: 32px;
+}
+
+p {
+  font-family: "Hanken Grotesk";
+  text-align: center;
+}
+
 .about-section {
   display: flex;
   flex-direction: row;
@@ -8,7 +36,7 @@
 }
 
 .about-section article {
-  border-radius: 5%;
+  border-radius: 5px;
 }
 
 h3 {
@@ -16,7 +44,9 @@ h3 {
 }
 
 .work-history {
-  background-color: rgba(183, 164, 167);
+  background-color: rgba(240, 248, 255, 0.749);
+  border: 5px solid rgb(156, 109, 143);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,7 +73,9 @@ h3 {
 }
 
 .programming {
-  background-color: rgba(183, 164, 167);
+  background-color: rgba(240, 248, 255, 0.749);
+  border: 5px solid rgb(156, 109, 143);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -69,7 +101,9 @@ h3 {
 }
 
 .interests {
-  background-color: rgba(183, 164, 167);
+  background-color: rgba(240, 248, 255, 0.749);
+  border: 5px solid rgb(156, 109, 143);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,8 +152,8 @@ h3 {
   border-radius: 20px;
   /*border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;*/
-  border: 2px solid rgb(183, 164, 167);
-  background-color: rgb(159, 144, 146);
+  border: 2px solid rgba(240, 248, 255, 0.749);
+  background-color: rgba(240, 248, 255, 0.749);
   margin-bottom: 3px;
 }
 

@@ -1,6 +1,29 @@
+.hero-image {
+  background-image: linear-gradient(
+      to bottom,
+      rgb(158, 142, 164) 0%,
+      rgba(158, 142, 164, 0) 30%
+    ),
+    url("../../assets/hero-image-projects.jpg");
+  height: 100%;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   text-align: center;
   font-family: Hanken Grotesk;
+  font-size: 32px;
+}
+
+p {
+  font-family: 'Hanken Grotesk';
+  text-align: center;
 }
 
 .section {
@@ -19,12 +42,23 @@ h1 {
   text-align: center;
   font-family: Hanken Grotesk;
   padding: 20px 20px;
+  background-color: rgba(240, 248, 255, 0.749);
   border: 5px solid rgb(156, 109, 143);
   border-radius: 5px;
 }
 
-.article-box a {
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.links a {
   text-decoration: none;
-  color: rgb(29, 8, 62);
+  color: black;
   font-weight: bold;
+  border: solid black 2px;
+  border-radius: 5px;
+  padding: 2px 2px;
 }

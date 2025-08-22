@@ -25,8 +25,7 @@ p {
   font-family: "Hanken Grotesk";
   text-align: center;
   font-size: 20px;
-  color: rgb(146, 183, 221);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  color: rgb(0, 0, 0);
 }
 
 .section {
@@ -60,7 +59,6 @@ p {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding-top: 40px;
 }
 
 .links a {

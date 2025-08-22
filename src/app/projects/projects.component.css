@@ -21,9 +21,24 @@ h1 {
   font-size: 38px;
 }
 
+h3 {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
 p {
   font-family: "Hanken Grotesk";
   text-align: center;
+  font-size: 20px;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  overflow: hidden;
+}
+
+p.collapsed {
+  max-height: 60px; /* adjust as needed */
+  opacity: 0.6;
+  text-overflow: ellipsis;
+  position: relative;
 }
 
 .section {
@@ -36,8 +51,8 @@ p {
 }
 
 .article-box {
-  flex: 1 1 33%;
-  max-width: 33%;
+  flex: 1 1 25%;
+  max-width: 25%;
   box-sizing: border-box;
   text-align: center;
   font-family: Hanken Grotesk;
@@ -56,9 +71,28 @@ p {
 
 .links a {
   text-decoration: none;
+  background: white;
   color: black;
   font-weight: bold;
-  border: solid black 2px;
+  font-size: 16px;
+  border: 2px solid rgb(156, 109, 143);
   border-radius: 5px;
   padding: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  font-family: "Hanken Grotesk";
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid rgb(156, 109, 143);
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: rgb(156, 109, 143);
+  color: white;
 }

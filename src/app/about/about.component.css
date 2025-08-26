@@ -54,6 +54,10 @@ p {
   text-shadow: none;
 }
 
+.article-box a {
+  color: rgb(156, 109, 143);
+}
+
 .links {
   display: flex;
   justify-content: center;

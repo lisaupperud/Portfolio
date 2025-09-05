@@ -46,7 +46,7 @@ export class ProjectsComponent {
           for job roles with fields like role ID, title, description, salary,
           and creation date. The application also connects employees to job
           roles and supports user login, using SQL JOINs.`,
-      category: ['SQL', 'Unit Test'],
+      category: ['Database', 'Unit Test'],
     },
     {
       title: 'Web Development',
@@ -93,7 +93,7 @@ export class ProjectsComponent {
       description: `This project is a web service built with Spring following the REST architecture. 
           It implements a simple To-Do list to demonstrate our knowledge and practical skills 
           in designing and working with REST APIs. `,
-      category: ['noSQL', 'Spring', 'API', 'Backend'],
+      category: ['Database', 'Spring', 'API', 'Backend'],
     },
   ];
 

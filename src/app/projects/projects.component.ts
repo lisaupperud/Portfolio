@@ -46,7 +46,7 @@ export class ProjectsComponent {
           for job roles with fields like role ID, title, description, salary,
           and creation date. The application also connects employees to job
           roles and supports user login, using SQL JOINs.`,
-      category: ['Database', 'Unit Test'],
+      category: ['SQL', 'Unit Test'],
     },
     {
       title: 'Web Development',
@@ -62,8 +62,10 @@ export class ProjectsComponent {
       title: 'Frontend + Frameworks & Agile Project Methodology',
       url: 'https://fitness-app-teal-sigma.vercel.app/',
       img: '../../assets/fitness.png',
-      description:
-        'This responsive website is built using HTML, CSS, and JavaScript...',
+      description: ` This project is a Single Page Application built with Angular, 
+        developed in collaboration between 5 Java developers and 4 UX
+        designers. The app is designed to support elderly users in staying
+        active.`,
       category: ['Frontend', 'Angular'],
     },
     {
@@ -82,7 +84,16 @@ export class ProjectsComponent {
       description: `A REST API built with Spring Boot, secured with Spring Security and
           JWT. Includes CRUD operations with HSQLDB and a React frontend for a
           clean user experience.`,
-      category: ['Frontend', 'React', 'Fullstack', 'Backend'],
+      category: ['Frontend', 'React', 'Fullstack', 'Backend', 'API', 'Spring'],
+    },
+    {
+      title: 'Webservices in Java',
+      url: 'https://github.com/lisaupperud/ToDo_Webservice.git',
+      img: '../../assets/webservice.png',
+      description: `This project is a web service built with Spring following the REST architecture. 
+          It implements a simple To-Do list to demonstrate our knowledge and practical skills 
+          in designing and working with REST APIs. `,
+      category: ['noSQL', 'Spring', 'API', 'Backend'],
     },
   ];
 
